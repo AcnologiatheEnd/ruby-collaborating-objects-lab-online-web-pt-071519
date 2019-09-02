@@ -33,6 +33,7 @@ class Artist
   end
   
   def songs
-    Song.al.select{|song|self == song.artist}
+    Song.all.select{|song|self == song.artist}
+  end
     
   end  
